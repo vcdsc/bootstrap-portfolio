@@ -1,5 +1,5 @@
 body {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 a {
@@ -15,8 +15,9 @@ a:hover {
   color: grey;
 }
 
-.logo {
+.navbar-logo {
   border-radius: 100%;
+  vertical-align: middle !important;
 }
 
 .navbar-nav {
@@ -24,5 +25,5 @@ a:hover {
 }
 
 .navbar-nav a {
-  padding-right: 30px;
+  padding-right: 10px;
 }
