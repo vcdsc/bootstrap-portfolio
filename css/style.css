@@ -2,7 +2,7 @@ body {
   padding-top: 100px;
 }
 
-a {
+a:link {
   text-decoration: none;
   color: goldenrod;
 }
@@ -26,4 +26,10 @@ a:hover {
 
 .navbar-nav a {
   padding-right: 10px;
+}
+
+footer h4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
