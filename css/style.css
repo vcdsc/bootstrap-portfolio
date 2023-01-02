@@ -1,18 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@100;400;600&display=swap");
+
+* {
+  font-family: "Pacifico", cursive;
+  font-family: "Roboto Mono", monospace;
+}
+
 body {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
-a:link {
-  text-decoration: none;
+span {
   color: goldenrod;
+  font-size: large;
+  font-weight: 600;
 }
 
-a:visited {
+span:hover {
   color: teal;
 }
 
-a:hover {
+.nav-link:link,
+footer a:link {
+  text-decoration: none;
+  color: teal;
+  font-size: medium;
+  padding-right: 10px;
+}
+
+.nav-link:visited,
+footer a:visited {
   color: grey;
+}
+
+.nav-link:hover,
+footer a:hover {
+  color: goldenrod;
 }
 
 .navbar-logo {
@@ -24,12 +46,85 @@ a:hover {
   flex-direction: row;
 }
 
-.navbar-nav a {
-  padding-right: 10px;
+.container-fluid {
+  padding-bottom: 5px;
 }
 
-footer h4 {
+.hello-world,
+.projects,
+.skills,
+.contacts {
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.section-title,
+.section-title code {
+  color: black;
+  padding-bottom: 10px;
+}
+
+.hello-world img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.hello-world p {
+  text-align: justify;
+}
+
+.cardContainer {
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 12vw;
+  object-fit: cover;
+}
+
+.btn-dark {
+  color: teal;
+}
+
+.btn-dark:hover {
+  color: goldenrod;
+}
+
+.skills-bar {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+.html {
+  width: 80%;
+  background-color: black;
+}
+
+.css {
+  width: 60%;
+  background-color: darkgrey;
+}
+
+.js {
+  width: 5%;
+  background-color: lightgrey;
+}
+
+.skills-tags {
   padding-top: 20px;
-  padding-bottom: 20px;
+}
+
+footer {
+  padding-bottom: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
