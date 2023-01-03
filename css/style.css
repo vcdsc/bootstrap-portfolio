@@ -1,3 +1,10 @@
+:root {
+  --link-redirect: teal;
+  --link-visited: grey;
+  --link-hover: blanchedalmond;
+  --light-accent: lightgrey;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@100;400;600&display=swap");
 
 * {
@@ -6,38 +13,35 @@
 }
 
 body {
-  padding-top: 80px;
+  background-color: #4a6c6f;
+  padding-top: 120px;
 }
 
-span {
-  color: goldenrod;
-  font-size: large;
-  font-weight: 600;
+footer {
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
 }
 
-span:hover {
-  color: teal;
+footer p {
+  color: var(--light-accent);
 }
 
-.nav-link:link,
-footer a:link,
-.contacts a:link {
+a:link {
   text-decoration: none;
-  color: teal;
   font-size: medium;
   padding-right: 10px;
+  color: var(--teal);
 }
 
-.nav-link:visited,
-footer a:visited,
-.contacts a:visited {
+a:visited {
   color: grey;
 }
 
-.nav-link:hover,
-footer a:hover,
-.contacts a:hover {
-  color: goldenrod;
+a:hover {
+  color: blanchedalmond;
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
@@ -50,9 +54,9 @@ footer a:hover,
 .navbar-nav {
   flex-direction: row;
 }
-
-.container-fluid {
-  padding-bottom: 5px;
+nav a span {
+  font-size: large;
+  font-weight: 600;
 }
 
 .hello-world,
@@ -84,6 +88,14 @@ footer a:hover,
   text-align: center;
 }
 
+.spacing {
+  padding: 0px 30px 30px 30px;
+}
+
+.content {
+  padding: 50px;
+}
+
 .card {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
@@ -104,11 +116,11 @@ footer a:hover,
 }
 
 .btn-dark {
-  color: teal;
+  color: var(--link-redirect);
 }
 
 .btn-dark:hover {
-  color: goldenrod;
+  color: var(--link-hover);
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
@@ -139,12 +151,4 @@ footer a:hover,
 
 .skills-tags {
   padding-top: 20px;
-}
-
-footer {
-  padding-bottom: 50px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
 }
